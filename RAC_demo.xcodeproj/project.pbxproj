@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2610EA304F28198A6B9A0876 /* Pods_RAC_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D157B0D94A0FE4815852CE0 /* Pods_RAC_demo.framework */; };
 		B50A2EAF1F872D9C00C8CE88 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B50A2EAE1F872D9C00C8CE88 /* AppDelegate.m */; };
 		B50A2EB21F872D9C00C8CE88 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B50A2EB11F872D9C00C8CE88 /* ViewController.m */; };
 		B50A2EB51F872D9C00C8CE88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B50A2EB31F872D9C00C8CE88 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 		B50A2EBD1F872D9C00C8CE88 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B50A2EBC1F872D9C00C8CE88 /* main.m */; };
 		B50A2EC71F872D9C00C8CE88 /* RAC_demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B50A2EC61F872D9C00C8CE88 /* RAC_demoTests.m */; };
 		B50A2ED21F872D9C00C8CE88 /* RAC_demoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B50A2ED11F872D9C00C8CE88 /* RAC_demoUITests.m */; };
+		B5C1CABE206A14CD00DCF0E1 /* XXQLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C1CABD206A14CD00DCF0E1 /* XXQLoginViewController.m */; };
+		B5C1CAC2206A150E00DCF0E1 /* VCViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C1CAC1206A150E00DCF0E1 /* VCViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11739CEADC9A5C1F869ACC40 /* Pods-RAC_demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAC_demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RAC_demo/Pods-RAC_demo.release.xcconfig"; sourceTree = "<group>"; };
+		7D157B0D94A0FE4815852CE0 /* Pods_RAC_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RAC_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B50A2EAA1F872D9C00C8CE88 /* RAC_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RAC_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B50A2EAD1F872D9C00C8CE88 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B50A2EAE1F872D9C00C8CE88 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +56,12 @@
 		B50A2ECD1F872D9C00C8CE88 /* RAC_demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RAC_demoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B50A2ED11F872D9C00C8CE88 /* RAC_demoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAC_demoUITests.m; sourceTree = "<group>"; };
 		B50A2ED31F872D9C00C8CE88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B539F6EE2063B2300058E7B6 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		B5C1CABC206A14CD00DCF0E1 /* XXQLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXQLoginViewController.h; sourceTree = "<group>"; };
+		B5C1CABD206A14CD00DCF0E1 /* XXQLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXQLoginViewController.m; sourceTree = "<group>"; };
+		B5C1CAC0206A150E00DCF0E1 /* VCViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VCViewModel.h; sourceTree = "<group>"; };
+		B5C1CAC1206A150E00DCF0E1 /* VCViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VCViewModel.m; sourceTree = "<group>"; };
+		EFC63CF21D6DD7E3F4FBC1FA /* Pods-RAC_demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAC_demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RAC_demo/Pods-RAC_demo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2610EA304F28198A6B9A0876 /* Pods_RAC_demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,13 +90,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		226E06D26BDD43A5582981D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D157B0D94A0FE4815852CE0 /* Pods_RAC_demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B50A2EA11F872D9B00C8CE88 = {
 			isa = PBXGroup;
 			children = (
+				B539F6EE2063B2300058E7B6 /* PrefixHeader.pch */,
 				B50A2EAC1F872D9C00C8CE88 /* RAC_demo */,
 				B50A2EC51F872D9C00C8CE88 /* RAC_demoTests */,
 				B50A2ED01F872D9C00C8CE88 /* RAC_demoUITests */,
 				B50A2EAB1F872D9C00C8CE88 /* Products */,
+				B8F45EFD6BF4D6DD516CC10B /* Pods */,
+				226E06D26BDD43A5582981D8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +124,13 @@
 		B50A2EAC1F872D9C00C8CE88 /* RAC_demo */ = {
 			isa = PBXGroup;
 			children = (
+				B5C1CABF206A14F900DCF0E1 /* ViewModel */,
 				B50A2EAD1F872D9C00C8CE88 /* AppDelegate.h */,
 				B50A2EAE1F872D9C00C8CE88 /* AppDelegate.m */,
 				B50A2EB01F872D9C00C8CE88 /* ViewController.h */,
 				B50A2EB11F872D9C00C8CE88 /* ViewController.m */,
+				B5C1CABC206A14CD00DCF0E1 /* XXQLoginViewController.h */,
+				B5C1CABD206A14CD00DCF0E1 /* XXQLoginViewController.m */,
 				B50A2EB31F872D9C00C8CE88 /* Main.storyboard */,
 				B50A2EB61F872D9C00C8CE88 /* Assets.xcassets */,
 				B50A2EB81F872D9C00C8CE88 /* LaunchScreen.storyboard */,
@@ -132,6 +158,24 @@
 			path = RAC_demoUITests;
 			sourceTree = "<group>";
 		};
+		B5C1CABF206A14F900DCF0E1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B5C1CAC0206A150E00DCF0E1 /* VCViewModel.h */,
+				B5C1CAC1206A150E00DCF0E1 /* VCViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B8F45EFD6BF4D6DD516CC10B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EFC63CF21D6DD7E3F4FBC1FA /* Pods-RAC_demo.debug.xcconfig */,
+				11739CEADC9A5C1F869ACC40 /* Pods-RAC_demo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +183,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B50A2ED61F872D9C00C8CE88 /* Build configuration list for PBXNativeTarget "RAC_demo" */;
 			buildPhases = (
+				ED1393E9332645FC69BF104F /* [CP] Check Pods Manifest.lock */,
 				B50A2EA61F872D9C00C8CE88 /* Sources */,
 				B50A2EA71F872D9C00C8CE88 /* Frameworks */,
 				B50A2EA81F872D9C00C8CE88 /* Resources */,
+				536D3C23C04E59B2AF6D1590 /* [CP] Embed Pods Frameworks */,
+				7EF4BDDE28BF3C89BAD3AAA3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,11 +307,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		536D3C23C04E59B2AF6D1590 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RAC_demo/Pods-RAC_demo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RAC_demo/Pods-RAC_demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7EF4BDDE28BF3C89BAD3AAA3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RAC_demo/Pods-RAC_demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED1393E9332645FC69BF104F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RAC_demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B50A2EA61F872D9C00C8CE88 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5C1CAC2206A150E00DCF0E1 /* VCViewModel.m in Sources */,
+				B5C1CABE206A14CD00DCF0E1 /* XXQLoginViewController.m in Sources */,
 				B50A2EB21F872D9C00C8CE88 /* ViewController.m in Sources */,
 				B50A2EBD1F872D9C00C8CE88 /* main.m in Sources */,
 				B50A2EAF1F872D9C00C8CE88 /* AppDelegate.m in Sources */,
@@ -324,6 +427,7 @@
 /* Begin XCBuildConfiguration section */
 		B50A2ED41F872D9C00C8CE88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFC63CF21D6DD7E3F4FBC1FA /* Pods-RAC_demo.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -379,6 +483,7 @@
 		};
 		B50A2ED51F872D9C00C8CE88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11739CEADC9A5C1F869ACC40 /* Pods-RAC_demo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -428,10 +533,13 @@
 		};
 		B50A2ED71F872D9C00C8CE88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFC63CF21D6DD7E3F4FBC1FA /* Pods-RAC_demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3DZEF4G7P9;
+				GCC_PREFIX_HEADER = "/Users/admin/Documents/XXQ_个人文件/ReactiveCocoa/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = RAC_demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xiangquan-xia.RAC-demo";
@@ -442,10 +550,13 @@
 		};
 		B50A2ED81F872D9C00C8CE88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11739CEADC9A5C1F869ACC40 /* Pods-RAC_demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3DZEF4G7P9;
+				GCC_PREFIX_HEADER = "/Users/admin/Documents/XXQ_个人文件/ReactiveCocoa/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = RAC_demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xiangquan-xia.RAC-demo";
@@ -460,6 +571,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3DZEF4G7P9;
+				GCC_PREFIX_HEADER = "/Users/admin/Documents/XXQ_个人文件/ReactiveCocoa/PrefixHeader.pch";
 				INFOPLIST_FILE = RAC_demoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xiangquan-xia.RAC-demoTests";
@@ -475,6 +587,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3DZEF4G7P9;
+				GCC_PREFIX_HEADER = "/Users/admin/Documents/XXQ_个人文件/ReactiveCocoa/PrefixHeader.pch";
 				INFOPLIST_FILE = RAC_demoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xiangquan-xia.RAC-demoTests";

@@ -1,0 +1,13 @@
+['RAC_demo','RAC_demoTests']
+
+platform:ios, '8.0'
+use_frameworks!
+inhibit_all_warnings! #全局禁止显示警告
+
+target 'RAC_demo' do
+
+#pod 'ReactiveCocoa', '~> 2.5'
+pod 'ReactiveCocoa', :git => 'https://github.com/zhao0/ReactiveCocoa.git', :tag => '2.5.2'
+
+
+end
