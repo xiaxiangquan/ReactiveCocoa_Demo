@@ -14,7 +14,7 @@
 
 
 #import <ReactiveCocoa/ReactiveCocoa.h>
-//#import <ReactiveCocoa/RACEXTScope.h>
+#import <ReactiveCocoa/RACReturnSignal.h>
 
 #endif /* PrefixHeader_pch */
 

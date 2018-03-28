@@ -24,13 +24,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     /*
+     示例一：
     [self sequenceSwitch];
     [self combiningLatest];
     [self merge];
      */
 
     /*
-     MVVM+ReactiveCocoa 简单应用 示例
+    示例二：MVVM+ReactiveCocoa 简单应用
     [self bindModel];
     // 按钮点击事件
     [[self.loginBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
@@ -38,10 +39,62 @@
     }];
      */
     
+    
+    /*
+     示例三：
+     */
+    RACSignal *validUserNameSignal = [self.textField.rac_textSignal map:^id(NSString *value) {
+        return @([self isVaildUsername:value]);
+    }];
+    
+    RACSignal *validPwdSignal = [self.pwdTextField.rac_textSignal map:^id(NSString *value) {
+        return @([self isVaildUsername:value]);
+    }];
+    
+    [[validUserNameSignal map:^id(NSString *value) {
+        
+        return [self isVaildUsername:value] ? [UIColor redColor] : [UIColor yellowColor];
+        
+    }] subscribeNext:^(UIColor *color) {
+        self.textField.backgroundColor = color;
+    }];
+    
+    
+    /* 例子 */
+    self.loginBtn.rac_command = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
+        NSLog(@"%@",input);
+        return [RACSignal empty];
+    }];
+    
+    /* */
     [self.textField.rac_textSignal subscribeNext:^(id x) {
         NSLog(@"%@",x);
     }];
     
+    
+    /* 例子 */
+    RACSignal *signal = [self.textField.rac_textSignal bind:^RACStreamBindBlock{
+        return ^RACStream *(id value, BOOL *stop) {
+            return [RACReturnSignal return:[NSString stringWithFormat:@"输出%@",value]];
+        };
+    }];
+    [signal subscribeNext:^(id x) {
+        NSLog(@" --- %@",x);
+    }];
+    
+    
+    /* 例子 */
+    
+
+    
+}
+
+- (BOOL)isVaildUsername:(NSString *)text {
+    
+//    if (text.length > 4) {
+//        return YES;
+//    }
+    return NO;
 }
 
 - (void)bindModel {
@@ -71,8 +124,6 @@
 }
 
 
-
-/*
 // Sequence 和 Map
 - (void)uppercaseString {
     
@@ -162,7 +213,6 @@
     [B sendNext:@"BBB"];
     [C sendNext:@"CCC"];
 }
-*/
 
 
 
