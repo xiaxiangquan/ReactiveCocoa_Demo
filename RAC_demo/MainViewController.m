@@ -8,9 +8,11 @@
 
 #import "MainViewController.h"
 #import "XXQBasicViewController.h"
+#import "XXQNetWorkViewController.h"
 
 typedef NS_ENUM(NSInteger, XXQCellType) {
     XXQCell_dingyue,
+    XXQCell_network,
 };
 
 @interface MainViewController ()<UITableViewDelegate, UITableViewDataSource>
@@ -30,7 +32,8 @@ typedef NS_ENUM(NSInteger, XXQCellType) {
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setTablViewUI];
-    _dataArr = @[@{@"type":@(XXQCell_dingyue), @"title":@"基本用法"}];
+    _dataArr = @[@{@"type":@(XXQCell_dingyue), @"title":@"基本用法"},
+                 @{@"type":@(XXQCell_network), @"title":@"网络请求用法"}];
 }
 
 - (void)setTablViewUI {
@@ -64,7 +67,11 @@ typedef NS_ENUM(NSInteger, XXQCellType) {
             [self presentViewController:vc animated:YES completion:nil];
         }
             break;
-            
+        case XXQCell_network: {
+            XXQNetWorkViewController *vc = [[XXQNetWorkViewController alloc] init];
+            [self presentViewController:vc animated:YES completion:nil];
+        }
+            break;
         default:
             break;
     }

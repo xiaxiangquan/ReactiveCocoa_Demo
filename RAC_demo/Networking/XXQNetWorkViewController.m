@@ -1,41 +1,35 @@
 //
-//  XXQBasicViewController.m
+//  XXQNetWorkViewController.m
 //  RAC_demo
 //
-//  Created by 夏祥全 on 2018/3/29.
+//  Created by xxq on 2018/3/29.
 //  Copyright © 2018年 qwe. All rights reserved.
 //
 
-#import "XXQBasicViewController.h"
+#import "XXQNetWorkViewController.h"
+#import "XXQNetworkViewModel.h"
 
-@interface XXQBasicViewController ()
+@interface XXQNetWorkViewController ()
+
+@property (nonatomic, strong) XXQNetworkViewModel *viewModel;
 
 @end
 
-@implementation XXQBasicViewController
-
-- (void)dealloc {
-    
-}
+@implementation XXQNetWorkViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view setBackgroundColor:[UIColor whiteColor]];
     [self setBackBtn];
-    
-    RACSignal *signal = [RACSignal createSignal:^RACDisposable*(id<RACSubscriber> subscriber) {
-        [subscriber sendNext:@"aaa"];
-        [subscriber sendNext:@"bbb"];
-        return nil;
-    }];
-    [signal subscribeNext:^(id x) {
+    [self requestNetworking];
+}
+
+- (void)requestNetworking {
+    self.viewModel = [[XXQNetworkViewModel alloc] init];
+    [self.viewModel requestData];
+    [self.viewModel.successSubject subscribeNext:^(id x) {
         NSLog(@"%@",x);
-    } error:^(NSError *error) {
-        
-    } completed:^{
-        
     }];
-    
 }
 
 - (void)setBackBtn {

@@ -9,5 +9,6 @@ target 'RAC_demo' do
 #pod 'ReactiveCocoa', '~> 2.5'
 pod 'ReactiveCocoa', :git => 'https://github.com/zhao0/ReactiveCocoa.git', :tag => '2.5.2'
 
+pod 'AFNetworking', '~> 3.2.0'
 
 end

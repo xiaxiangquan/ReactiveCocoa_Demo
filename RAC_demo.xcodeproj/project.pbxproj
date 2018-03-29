@@ -16,6 +16,8 @@
 		B50A2EBD1F872D9C00C8CE88 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B50A2EBC1F872D9C00C8CE88 /* main.m */; };
 		B50A2EC71F872D9C00C8CE88 /* RAC_demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B50A2EC61F872D9C00C8CE88 /* RAC_demoTests.m */; };
 		B50A2ED21F872D9C00C8CE88 /* RAC_demoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B50A2ED11F872D9C00C8CE88 /* RAC_demoUITests.m */; };
+		B5908EF9206C91DD00C85B42 /* XXQNetWorkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5908EF7206C91DD00C85B42 /* XXQNetWorkViewController.m */; };
+		B5908F00206C922900C85B42 /* XXQNetworkViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B5908EFF206C922900C85B42 /* XXQNetworkViewModel.m */; };
 		B5B88743206BD641006E95F3 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B88742206BD641006E95F3 /* MainViewController.m */; };
 		B5C1CABE206A14CD00DCF0E1 /* XXQLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C1CABD206A14CD00DCF0E1 /* XXQLoginViewController.m */; };
 		B5C1CAC2206A150E00DCF0E1 /* VCViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C1CAC1206A150E00DCF0E1 /* VCViewModel.m */; };
@@ -59,6 +61,10 @@
 		B50A2ED11F872D9C00C8CE88 /* RAC_demoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAC_demoUITests.m; sourceTree = "<group>"; };
 		B50A2ED31F872D9C00C8CE88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B539F6EE2063B2300058E7B6 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		B5908EF7206C91DD00C85B42 /* XXQNetWorkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXQNetWorkViewController.m; sourceTree = "<group>"; };
+		B5908EF8206C91DD00C85B42 /* XXQNetWorkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXQNetWorkViewController.h; sourceTree = "<group>"; };
+		B5908EFE206C922900C85B42 /* XXQNetworkViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXQNetworkViewModel.h; sourceTree = "<group>"; };
+		B5908EFF206C922900C85B42 /* XXQNetworkViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXQNetworkViewModel.m; sourceTree = "<group>"; };
 		B5B88741206BD641006E95F3 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		B5B88742206BD641006E95F3 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		B5C1CABC206A14CD00DCF0E1 /* XXQLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXQLoginViewController.h; sourceTree = "<group>"; };
@@ -130,6 +136,7 @@
 		B50A2EAC1F872D9C00C8CE88 /* RAC_demo */ = {
 			isa = PBXGroup;
 			children = (
+				B5908EF6206C91DD00C85B42 /* Networking */,
 				B5C1CABF206A14F900DCF0E1 /* ViewModel */,
 				B50A2EAD1F872D9C00C8CE88 /* AppDelegate.h */,
 				B50A2EAE1F872D9C00C8CE88 /* AppDelegate.m */,
@@ -166,6 +173,41 @@
 				B50A2ED31F872D9C00C8CE88 /* Info.plist */,
 			);
 			path = RAC_demoUITests;
+			sourceTree = "<group>";
+		};
+		B5908EF6206C91DD00C85B42 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B5908EFB206C920C00C85B42 /* Model */,
+				B5908EFC206C920C00C85B42 /* View */,
+				B5908EFD206C920C00C85B42 /* ViewModel */,
+				B5908EF8206C91DD00C85B42 /* XXQNetWorkViewController.h */,
+				B5908EF7206C91DD00C85B42 /* XXQNetWorkViewController.m */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		B5908EFB206C920C00C85B42 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B5908EFC206C920C00C85B42 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B5908EFD206C920C00C85B42 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B5908EFE206C922900C85B42 /* XXQNetworkViewModel.h */,
+				B5908EFF206C922900C85B42 /* XXQNetworkViewModel.m */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		B5C1CABF206A14F900DCF0E1 /* ViewModel */ = {
@@ -325,10 +367,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RAC_demo/Pods-RAC_demo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,8 +425,10 @@
 				B5B88743206BD641006E95F3 /* MainViewController.m in Sources */,
 				B5C1CABE206A14CD00DCF0E1 /* XXQLoginViewController.m in Sources */,
 				B50A2EB21F872D9C00C8CE88 /* ViewController.m in Sources */,
+				B5908F00206C922900C85B42 /* XXQNetworkViewModel.m in Sources */,
 				B50A2EBD1F872D9C00C8CE88 /* main.m in Sources */,
 				B50A2EAF1F872D9C00C8CE88 /* AppDelegate.m in Sources */,
+				B5908EF9206C91DD00C85B42 /* XXQNetWorkViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,7 +596,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3DZEF4G7P9;
-				GCC_PREFIX_HEADER = "/Users/qwe/Documents/个人技术学习/XXQReactiveCocoa/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "/Users/admin/Documents/XXQ_个人文件/ReactiveCocoa/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = RAC_demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -567,7 +613,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3DZEF4G7P9;
-				GCC_PREFIX_HEADER = "/Users/qwe/Documents/个人技术学习/XXQReactiveCocoa/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "/Users/admin/Documents/XXQ_个人文件/ReactiveCocoa/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = RAC_demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
