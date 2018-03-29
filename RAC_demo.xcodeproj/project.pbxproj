@@ -16,8 +16,10 @@
 		B50A2EBD1F872D9C00C8CE88 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B50A2EBC1F872D9C00C8CE88 /* main.m */; };
 		B50A2EC71F872D9C00C8CE88 /* RAC_demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B50A2EC61F872D9C00C8CE88 /* RAC_demoTests.m */; };
 		B50A2ED21F872D9C00C8CE88 /* RAC_demoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B50A2ED11F872D9C00C8CE88 /* RAC_demoUITests.m */; };
+		B5B88743206BD641006E95F3 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B88742206BD641006E95F3 /* MainViewController.m */; };
 		B5C1CABE206A14CD00DCF0E1 /* XXQLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C1CABD206A14CD00DCF0E1 /* XXQLoginViewController.m */; };
 		B5C1CAC2206A150E00DCF0E1 /* VCViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C1CAC1206A150E00DCF0E1 /* VCViewModel.m */; };
+		B5D8D510206C5A7E0035CD6C /* XXQBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D8D50F206C5A7E0035CD6C /* XXQBasicViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,10 +59,14 @@
 		B50A2ED11F872D9C00C8CE88 /* RAC_demoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAC_demoUITests.m; sourceTree = "<group>"; };
 		B50A2ED31F872D9C00C8CE88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B539F6EE2063B2300058E7B6 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		B5B88741206BD641006E95F3 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		B5B88742206BD641006E95F3 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		B5C1CABC206A14CD00DCF0E1 /* XXQLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXQLoginViewController.h; sourceTree = "<group>"; };
 		B5C1CABD206A14CD00DCF0E1 /* XXQLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXQLoginViewController.m; sourceTree = "<group>"; };
 		B5C1CAC0206A150E00DCF0E1 /* VCViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VCViewModel.h; sourceTree = "<group>"; };
 		B5C1CAC1206A150E00DCF0E1 /* VCViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VCViewModel.m; sourceTree = "<group>"; };
+		B5D8D50E206C5A7E0035CD6C /* XXQBasicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXQBasicViewController.h; sourceTree = "<group>"; };
+		B5D8D50F206C5A7E0035CD6C /* XXQBasicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXQBasicViewController.m; sourceTree = "<group>"; };
 		EFC63CF21D6DD7E3F4FBC1FA /* Pods-RAC_demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAC_demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RAC_demo/Pods-RAC_demo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,6 +135,10 @@
 				B50A2EAE1F872D9C00C8CE88 /* AppDelegate.m */,
 				B50A2EB01F872D9C00C8CE88 /* ViewController.h */,
 				B50A2EB11F872D9C00C8CE88 /* ViewController.m */,
+				B5B88741206BD641006E95F3 /* MainViewController.h */,
+				B5B88742206BD641006E95F3 /* MainViewController.m */,
+				B5D8D50E206C5A7E0035CD6C /* XXQBasicViewController.h */,
+				B5D8D50F206C5A7E0035CD6C /* XXQBasicViewController.m */,
 				B5C1CABC206A14CD00DCF0E1 /* XXQLoginViewController.h */,
 				B5C1CABD206A14CD00DCF0E1 /* XXQLoginViewController.m */,
 				B50A2EB31F872D9C00C8CE88 /* Main.storyboard */,
@@ -367,6 +377,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5C1CAC2206A150E00DCF0E1 /* VCViewModel.m in Sources */,
+				B5D8D510206C5A7E0035CD6C /* XXQBasicViewController.m in Sources */,
+				B5B88743206BD641006E95F3 /* MainViewController.m in Sources */,
 				B5C1CABE206A14CD00DCF0E1 /* XXQLoginViewController.m in Sources */,
 				B50A2EB21F872D9C00C8CE88 /* ViewController.m in Sources */,
 				B50A2EBD1F872D9C00C8CE88 /* main.m in Sources */,
@@ -538,7 +550,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3DZEF4G7P9;
-				GCC_PREFIX_HEADER = "/Users/admin/Documents/XXQ_个人文件/ReactiveCocoa/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "/Users/qwe/Documents/个人技术学习/XXQReactiveCocoa/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = RAC_demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -555,7 +567,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3DZEF4G7P9;
-				GCC_PREFIX_HEADER = "/Users/admin/Documents/XXQ_个人文件/ReactiveCocoa/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "/Users/qwe/Documents/个人技术学习/XXQReactiveCocoa/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = RAC_demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
