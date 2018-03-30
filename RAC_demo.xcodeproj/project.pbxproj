@@ -596,7 +596,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3DZEF4G7P9;
-				GCC_PREFIX_HEADER = "/Users/admin/Documents/XXQ_个人文件/ReactiveCocoa/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "/Users/qwe/Documents/个人技术学习/XXQReactiveCocoa/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = RAC_demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -613,7 +613,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3DZEF4G7P9;
-				GCC_PREFIX_HEADER = "/Users/admin/Documents/XXQ_个人文件/ReactiveCocoa/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "/Users/qwe/Documents/个人技术学习/XXQReactiveCocoa/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = RAC_demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

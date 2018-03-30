@@ -26,15 +26,21 @@
     RACSignal *signal = [RACSignal createSignal:^RACDisposable*(id<RACSubscriber> subscriber) {
         [subscriber sendNext:@"aaa"];
         [subscriber sendNext:@"bbb"];
-        return nil;
+        
+        [RACDisposable disposableWithBlock:^{
+            NSLog(@"disposableWithBlock ");
+        }];
+        return subscriber;
     }];
-    [signal subscribeNext:^(id x) {
+    RACDisposable *disposable = [signal subscribeNext:^(id x) {
         NSLog(@"%@",x);
+        
     } error:^(NSError *error) {
         
     } completed:^{
         
     }];
+    [disposable dispose];
     
 }
 
@@ -44,11 +50,11 @@
     btn.frame = CGRectMake(100, self.view.bounds.size.height - 60, 40, 40);
     [self.view addSubview:btn];
     
-    @weakify(self);
-    [[btn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(UIButton *btn) {
-        @strongify(self);
-        [self dismissViewControllerAnimated:YES completion:nil];
-    }];;
+//    @weakify(self);
+//    [[btn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(UIButton *btn) {
+//        @strongify(self);
+//        [self dismissViewControllerAnimated:YES completion:nil];
+//    }];;
 }
 
 
